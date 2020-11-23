@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 '''
-@File    :   connect_mysql.py
+@File    :   mysql_demo.py
 @Version :   1.0
 @Author  :   huangsv  
 @Contact :   huangsv@outlook.com
@@ -103,10 +103,10 @@ def delete(cursor):
 
 
 if __name__ == '__main__':
-    ip = '101.132.153.251'
-    user = 'byte'
-    password = 'Byte.123'
-    dbname = 'byte'
+    ip = '127.0.0.1'
+    user = '用户'
+    password = '密码'
+    dbname = '数据库'
     try:
         # 打开数据库连接
         db = pymysql.connect(ip, user, password, dbname, charset='utf8')
